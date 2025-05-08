@@ -5,6 +5,6 @@ var tags = document.getElementsByTagName("h2")
 
 for(var i = 0; i < tags.length; i++) 
 {
-    tags[i].style.color = "blue"
+    tags[i].style.color = "pink"
     tags[i].style.textAlign = "center"
 } 
