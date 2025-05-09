@@ -10,13 +10,14 @@
     <style>
         h1 {
             text-decoration: underline;
+            text-align: center;
         }
 
         img {
         margin: auto;
             display: flex;
             justify-content: center;
-            border: solid rgb(179, 21, 92);
+            border: solid rgb(3, 99, 40);
      }
 
         body {
@@ -26,13 +27,14 @@
         p {
             text-align: center;
             font-size: xx-large;
-            color: rgb(219, 38, 69);
+            color: rgb(180, 13, 38);
         }
 
         button {
             margin: 10px;
             font-size: large;
             
+
         }
     </style>
     <script>
@@ -40,19 +42,32 @@
         console.log("Welcome to WDDM 130")
     </script>
 
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
     <h1>Welcome to WDDM 130</h1>
     <img src="https://joinwayble.com/wp-content/uploads/2023/11/Humber-College.png">
     <p id="para1">This is the first class for WDDM 130. We are doing a review oh HTML CSS Javascript</p>
 
-    <h2>This is an H2</h2>
     <p>Carla Modified</p>
-<div>
-    <audio src="/assets/song.mp3" autoplay loop controls></audio>
-    <video src="/assets/video.mp4" autoplay loop controls></video>
+<div class="d-flex flex-column align-items-center">
+  <audio src="/assets/song.mp3" autoplay loop controls></audio>
+  <video src="/assets/video.mp4" autoplay loop controls width="320" height="240" class="mt-3"></video>
 </div>
 
-<button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+<div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-outline-primary me-2">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
